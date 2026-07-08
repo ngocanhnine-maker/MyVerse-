@@ -22,6 +22,7 @@ export default defineConfig(({ mode }) => {
   process.env.GEMINI_IMAGE_MODEL ||= env.GEMINI_IMAGE_MODEL;
 
   return {
+    base: '/MyVerse-/',
     plugins: [localApiPlugin(), react(), tailwindcss()],
   };
 });

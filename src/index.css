@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.field {
+  @apply w-full rounded-2xl border border-white/80 bg-white/80 px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition focus:border-fuchsia-300 focus:ring-4 focus:ring-fuchsia-100;
+}
+
+.label {
+  @apply mb-2 block text-sm font-bold text-slate-700;
+}
+
+.primary-btn {
+  @apply inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-fuchsia-500 to-indigo-500 px-5 py-3 text-sm font-extrabold text-white shadow-lg shadow-fuchsia-200 transition hover:-translate-y-0.5 hover:shadow-xl;
+}
+
+.secondary-btn {
+  @apply inline-flex items-center justify-center rounded-2xl border border-slate-200 bg-white/85 px-5 py-3 text-sm font-extrabold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:bg-white;
+}
+
+.danger-btn {
+  @apply inline-flex items-center justify-center rounded-2xl bg-rose-500 px-5 py-3 text-sm font-extrabold text-white shadow-lg shadow-rose-200 transition hover:-translate-y-0.5 hover:bg-rose-600;
+}
+
+.brand-name {
+  font-family: "Kosnav Trunk", Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #E53935;
+}
